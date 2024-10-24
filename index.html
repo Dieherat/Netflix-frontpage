@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="net">NETFLIX</h1>
+            <button class="sign-in-btn" onclick="signIn()">Sign In</button>
+        </header>
+
+        <main>
+            <h1 id="tv">Unlimited movies,<br> TV shows, and more</h1>
+            <p id="price">Starts at ₹149. Cancel at any time.</p>
+            <p id="price">Ready to watch? Enter your email to create or restart your membership.</p>
+
+            <div class="email-container">
+                <input type="email" id="email" placeholder="Email address" required />
+                <button class="get-started-btn" onclick="getStarted()">Get Started</button>
+            </div>
+        </main>
+    </div>
+
+    <div class="curved-line"></div>
+
+    <section class="trending-section">
+        <h2>Trending Now</h2>
+        <div class="trending-scroll auto-hide-scrollbar">
+            <div class="trending-grid">
+
+                <div class="trending-item">
+                    <img src="movie1.jpeg" alt="Trending Show 1" />
+                    <p>Image</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie2.jpeg" alt="Trending Show 2" />
+                    <p>Stranger Things</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie3.jpeg" alt="Trending Show 3" />
+                    <p>Sardarji</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie4.jpeg" alt="Trending Show 4" />
+                    <p>Shinchan</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie5.jpeg" alt="Trending Show 5" />
+                    <p>Doremon</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie6.jpeg" alt="Trending Show 6" />
+                    <p>KGF</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie7.jpeg" alt="Trending Show 7" />
+                    <p>KGF Chapter 2</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie8.jpeg" alt="Trending Show 8" />
+                    <p>Dr Strange 2</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie9.jpeg" alt="Trending Show 9" />
+                    <p>Iron Man 3</p>
+                </div>
+                <div class="trending-item">
+                    <img src="movie10.jpeg" alt="Trending Show 10" />
+                    <p>End Game</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">What is Netflix?</div>
+                    <div class="faq-answer">Netflix is a streaming service that offers a wide variety of TV shows, movies, and more.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">How much does Netflix cost?</div>
+                    <div class="faq-answer">Netflix offers several subscription plans. Visit the official website for up-to-date pricing.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(this)">Where can I watch?</div>
+                    <div class="faq-answer">You can watch Netflix on smart TVs, mobile devices, PCs, and more.</div>
+                </div>
+            </div>
+
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+            <div class="email-container">
+                <input type="email" id="footer-email" placeholder="Email address" required />
+                <button class="get-started-btn" onclick="getStarted()">Get Started</button>
+            </div>
+
+            <p>&copy; 2024 Harman</p>
+        </div>
+    </footer>
+</body>
+</html>

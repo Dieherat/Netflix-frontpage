@@ -1,0 +1,199 @@
+body {
+    background-color: black;
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    background-image: url('netflix.jpg');
+    color: white;
+    padding: 70px 30px;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#net {
+    color: red;
+    font-size: 2em;
+    margin: 0;
+}
+
+.sign-in-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#tv {
+    font-size: 3em;
+}
+
+#price {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.email-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.get-started-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    font-size: 19px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background-color: darkred;
+}
+
+.trending-section {
+    padding: 30px;
+}
+
+.trending-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.auto-hide-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1; 
+}
+
+.auto-hide-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.auto-hide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.auto-hide-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.trending-scroll.auto-hide-scrollbar {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.trending-grid {
+    display: flex;
+    gap: 10px;
+}  
+
+.trending-item {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;  
+}
+
+.trending-item img {
+    width: 120px;  
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;  
+}
+
+.trending-item p {
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.trending-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: #111;
+    padding: 40px;
+    text-align: center;
+}
+
+.faq-section h1 {
+    color: white;
+    font-size: 2em;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq-question {
+    background-color: #333;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 5px;
+}
+
+.curved-line {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, red, transparent);
+    border-radius: 100% 100% 0 0;
+}
