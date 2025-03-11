@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series - Netflix</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation Bar -->
+    <nav class="flex items-center justify-between p-4 bg-black border-b border-gray-700">
+        <div class="flex items-center space-x-4">
+            <a href="index.html">
+                <img src="https://placehold.co/100x40/FF0000/FFFFFF?text=Netflix" alt="Netflix Logo" class="h-10">
+            </a>
+            <a href="home.html" class="text-white hover:text-gray-300">Home</a>
+            <a href="series.html" class="text-white hover:text-gray-300">Series</a>
+            <a href="movies.html" class="text-white hover:text-gray-300">Movies</a>
+            <a href="originals.html" class="text-white hover:text-gray-300">Originals</a>
+            <a href="recently-added.html" class="text-white hover:text-gray-300">Recently Added</a>
+            <a href="my-list.html" class="text-white hover:text-gray-300">My List</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="kids.html" class="text-white hover:text-gray-300">KIDS</a>
+            <a href="dvd.html" class="text-white hover:text-gray-300">DVD</a>
+            <i class="fas fa-bell text-white cursor-pointer hover:text-gray-300"></i>
+            <div class="relative group">
+                <i class="fas fa-user text-white cursor-pointer"></i>
+                <div class="absolute right-0 mt-2 w-48 bg-black text-white rounded-md shadow-lg hidden group-hover:block">
+                    <a href="kids.html" class="block px-4 py-2 hover:bg-gray-800">Kids</a>
+                    <a href="manage-profiles.html" class="block px-4 py-2 hover:bg-gray-800">Manage Profiles</a>
+                    <a href="account.html" class="block px-4 py-2 hover:bg-gray-800">Account</a>
+                    <a href="help-center.html" class="block px-4 py-2 hover:bg-gray-800">Help Center</a>
+                    <a href="sign-out.html" class="block px-4 py-2 hover:bg-gray-800">Sign out of Netflix</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Series List Section -->
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold mb-8">Popular Series</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Series 1 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="money-heist.webp" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Money Heist</h2>
+                    <p class="text-gray-300 mt-2">A criminal mastermind recruits eight thieves to carry out an ambitious plan to print billions of euros at the Royal Mint of Spain.</p>
+                    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition duration-300">
+                        Watch Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Series 2 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="stranger-things.jpg" alt="Series 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Stranger Things</h2>
+                    <p class="text-gray-300 mt-2">When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces.</p>
+                    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition duration-300">
+                        Watch Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Series 3 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="Breaking Bad.jpg" alt="Series 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">Breaking Bad</h2>
+                    <p class="text-gray-300 mt-2">A high school chemistry teacher turned meth maker partners with a former student to secure his family's future.</p>
+                    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition duration-300">
+                        Watch Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Series 4 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="The Witcher.jpg" alt="Series 4" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold">The Witcher</h2>
+                    <p class="text-gray-300 mt-2">Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.</p>
+                    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition duration-300">
+                        Watch Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Add more series as needed -->
+        </div>
+    </div>
+</body>
+</html>

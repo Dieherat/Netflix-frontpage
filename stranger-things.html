@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stranger Things - Netflix</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="flex items-center justify-between p-4 bg-black border-b border-gray-700">
+        <div class="flex items-center space-x-4">
+            <!-- Netflix Logo (Links to Home) -->
+            <a href="index.html">
+                <img src="https://placehold.co/100x40/FF0000/FFFFFF?text=Netflix" alt="Netflix Logo" class="h-10">
+            </a>
+            <!-- Navigation Links -->
+            <a href="home.html" class="text-white hover:text-gray-300">Home</a>
+            <a href="series.html" class="text-white hover:text-gray-300">Series</a>
+            <a href="movies.html" class="text-white hover:text-gray-300">Movies</a>
+            <a href="originals.html" class="text-white hover:text-gray-300">Originals</a>
+            <a href="recently-added.html" class="text-white hover:text-gray-300">Recently Added</a>
+            <a href="my-list.html" class="text-white hover:text-gray-300">My List</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <!-- Additional Links -->
+            <a href="kids.html" class="text-white hover:text-gray-300">KIDS</a>
+            <a href="dvd.html" class="text-white hover:text-gray-300">DVD</a>
+            <!-- Notification Bell -->
+            <i class="fas fa-bell text-white cursor-pointer hover:text-gray-300"></i>
+            <!-- User Profile Dropdown -->
+            <div class="relative group">
+                <i class="fas fa-user text-white cursor-pointer"></i>
+                <div class="absolute right-0 mt-2 w-48 bg-black text-white rounded-md shadow-lg hidden group-hover:block">
+                    <a href="kids.html" class="block px-4 py-2 hover:bg-gray-800">Kids</a>
+                    <a href="manage-profiles.html" class="block px-4 py-2 hover:bg-gray-800">Manage Profiles</a>
+                    <a href="account.html" class="block px-4 py-2 hover:bg-gray-800">Account</a>
+                    <a href="help-center.html" class="block px-4 py-2 hover:bg-gray-800">Help Center</a>
+                    <a href="sign-out.html" class="block px-4 py-2 hover:bg-gray-800">Sign out of Netflix</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Movie Section -->
+    <div class="container mx-auto p-4">
+        <!-- Movie Video -->
+        <div class="relative">
+            <video id="stranger-things-video" class="w-full h-auto" controls autoplay>
+                <source src="Stranger.Things.S01E01.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Movie Description -->
+       <div class="mt-8">
+    <h1 class="text-4xl font-bold">STRANGER THINGS</h1>
+    <p class="text-lg mt-2">SEASON 4</p>
+    <div class="flex items-center mt-2">
+        <span class="bg-yellow-400 text-black px-2 py-1 rounded text-sm font-bold">IMDB</span>
+        <span class="ml-2 text-lg">8.7/10</span>
+    </div>
+    <p class="mt-1 text-lg">1.5B+ Streams</p>
+    <div class="mt-4 text-gray-300 space-y-4">
+        <p class="text-lg font-semibold text-white">Stranger Things - Season 4, Episode 1: "The Hellfire Club"</p>
+        <p class="text-lg">
+            The fourth season of <span class="font-semibold text-red-600">Stranger Things</span> kicks off with a gripping and emotional start. The episode, titled <span class="font-semibold text-red-600">"The Hellfire Club"</span>, picks up months after the events of Season 3, with the gang scattered across different locations and facing new challenges.
+        </p>
+        <p class="text-lg">
+            In <span class="font-semibold text-red-600">California</span>, <span class="font-semibold text-red-600">Eleven</span> (Millie Bobby Brown) and the Byers family—<span class="font-semibold text-red-600">Joyce</span> (Winona Ryder), <span class="font-semibold text-red-600">Will</span> (Noah Schnapp), and <span class="font-semibold text-red-600">Jonathan</span> (Charlie Heaton)—are trying to adjust to their new life. Eleven, now without her powers, struggles with bullying at school and the absence of <span class="font-semibold text-red-600">Mike</span> (Finn Wolfhard), who is back in Hawkins.
+        </p>
+        <p class="text-lg">
+            Meanwhile, in <span class="font-semibold text-red-600">Hawkins</span>, <span class="font-semibold text-red-600">Mike</span>, <span class="font-semibold text-red-600">Dustin</span> (Gaten Matarazzo), <span class="font-semibold text-red-600">Lucas</span> (Caleb McLaughlin), and <span class="font-semibold text-red-600">Max</span> (Sadie Sink) are navigating the ups and downs of high school. Dustin joins the <span class="font-semibold text-red-600">Hellfire Club</span>, a Dungeons & Dragons group led by the charismatic and mysterious <span class="font-semibold text-red-600">Eddie Munson</span> (Joseph Quinn). The club becomes a central part of the story, blending friendship, rivalry, and mystery.
+        </p>
+        <p class="text-lg">
+            The episode takes a dark turn when a gruesome murder shocks the town of Hawkins. The gang begins to suspect that the <span class="font-semibold text-red-600">Upside Down</span> is not done with them. Strange occurrences and eerie visions hint at a new and terrifying threat lurking in the shadows.
+        </p>
+        <p class="text-lg">
+            In a parallel storyline, <span class="font-semibold text-red-600">Joyce</span> receives a mysterious package from <span class="font-semibold text-red-600">Russia</span>, suggesting that <span class="font-semibold text-red-600">Hopper</span> (David Harbour) might still be alive. Determined to uncover the truth, Joyce teams up with <span class="font-semibold text-red-600">Murray</span> (Brett Gelman) to embark on a dangerous mission.
+        </p>
+        <p class="text-lg">
+            As the gang investigates the murder and the strange happenings in Hawkins, they uncover a dark secret tied to the town's past. The episode ends with a chilling cliffhanger, setting the stage for an intense and emotional season filled with suspense, action, and heartfelt moments.
+        </p>
+        <p class="text-lg font-semibold text-white">
+            Key Highlights:
+        </p>
+        <ul class="list-disc list-inside space-y-2">
+            <li><span class="font-semibold text-red-600">Eleven's Struggles:</span> Without her powers, Eleven faces bullying and isolation, making her journey one of resilience and self-discovery.</li>
+            <li><span class="font-semibold text-red-600">The Hellfire Club:</span> Dustin's involvement in the club introduces new dynamics and conflicts among the group.</li>
+            <li><span class="font-semibold text-red-600">A New Threat:</span> The gruesome murder and eerie visions hint at a terrifying new enemy from the Upside Down.</li>
+            <li><span class="font-semibold text-red-600">Hopper's Fate:</span> Joyce's determination to find Hopper adds an emotional and suspenseful layer to the story.</li>
+        </ul>
+        <p class="text-lg font-semibold text-white">
+            Why You Should Watch:
+        </p>
+        <p class="text-lg">
+            Season 4 of <span class="font-semibold text-red-600">Stranger Things</span> promises to be the most intense and emotional season yet. With a perfect blend of nostalgia, suspense, and character-driven storytelling, this episode sets the stage for an unforgettable journey into the unknown. Whether you're a longtime fan or new to the series, "The Hellfire Club" will keep you on the edge of your seat.
+        </p>
+    </div>
+</div>
+        <!-- More Episodes Section -->
+<div class="mt-8">
+    <h2 class="text-2xl font-bold mb-4">More Episodes</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <!-- Episode 2 -->
+        <div class="relative aspect-video">
+            <img alt="Episode 2" class="w-full h-full object-cover" src="ep2.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">EPISODE 2</span>
+        </div>
+        <!-- Episode 3 -->
+        <div class="relative aspect-video">
+            <img alt="Episode 3" class="w-full h-full object-cover" src="ep3.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">EPISODE 3</span>
+        </div>
+        <!-- Episode 4 -->
+        <div class="relative aspect-video">
+            <img alt="Episode 4" class="w-full h-full object-cover" src="ep4.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">EPISODE 4</span>
+        </div>
+        <!-- Episode 5 -->
+        <div class="relative aspect-video">
+            <img alt="Episode 5" class="w-full h-full object-cover" src="ep5.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">EPISODE 5</span>
+        </div>
+        <!-- Episode 6 -->
+        <div class="relative aspect-video">
+            <img alt="Episode 6" class="w-full h-full object-cover" src="ep6.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">EPISODE 6</span>
+        </div>
+        <!-- Episode 7 -->
+        <div class="relative aspect-video">
+            <img alt="Episode 7" class="w-full h-full object-cover" src="ep7.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">EPISODE 7</span>
+        </div>
+        <!-- Episode 8 -->
+        <div class="relative aspect-video">
+            <img alt="Episode 8" class="w-full h-full object-cover" src="ep8.jpg"/>
+            <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">EPISODE 8</span>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

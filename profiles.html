@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Who's Watching?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+    <!-- Profile Selection Page -->
+    <div class="profile-container text-center mt-20">
+        <h1 class="text-4xl font-bold mb-8">Who's watching?</h1>
+        <div class="profiles flex justify-center space-x-8">
+            <!-- Pre-added Adult Profile -->
+            <div class="profile text-center cursor-pointer" onclick="selectProfile('User1')">
+                <img src="user1.png">
+                <p class="mt-2 text-lg">User 1</p>
+            </div>
+
+            <!-- Pre-added Child Profile -->
+            <div class="profile text-center cursor-pointer" onclick="selectProfile('Kids')">
+                <img src="kid.png">
+                <p class="mt-2 text-lg">Kids</p>
+            </div>
+
+            <!-- Add Profile Button -->
+            <div class="profile add-profile text-center cursor-pointer" onclick="addProfile()">
+                <div class="add-icon w-32 h-32 rounded-lg bg-gray-800 flex items-center justify-center">
+                    <span class="text-4xl text-gray-400">+</span>
+                </div>
+                <p class="mt-2 text-lg">Add Profile</p>
+            </div>
+        </div>
+        <button class="manage-btn mt-8 bg-gray-800 text-white px-6 py-2 rounded-lg block mx-auto">Manage Profiles</button>
+    </div>
+
+    <script>
+        // Function to select a profile and redirect to the home page
+        function selectProfile(profileName) {
+            alert("Welcome, " + profileName + "!");
+            // Redirect to the home page
+            window.location.href = "home.html";
+        }
+
+        // Function to add a new profile
+        function addProfile() {
+            const profileName = prompt("Enter the name for the new profile:");
+            if (profileName) {
+                alert("Profile " + profileName + " added!");
+            }
+        }
+    </script>
+</body>
+</html>

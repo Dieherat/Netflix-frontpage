@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NETFLIX</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById("autoplay-video");
+            const videoContainer = document.getElementById("video-container");
+
+            if (video) {
+                // Set the video to start from the middle (e.g., 50% of its duration)
+                video.addEventListener("loadedmetadata", function () {
+                    video.currentTime = video.duration * 0.5; // Start from the middle
+                });
+
+                // Autoplay the video
+                video.play();
+
+                // Pause and hide the video after 20 seconds
+                setTimeout(() => {
+                    video.pause();
+                    videoContainer.style.display = "none"; // Hide the video container
+                }, 20000); // 20 seconds
+            }
+        });
+    </script>
+    <!-- Font Awesome (Updated) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navigation Bar -->
+<nav class="flex items-center justify-between p-4 bg-black border-b border-gray-700">
+    <div class="flex items-center space-x-4">
+        <!-- Netflix Logo (Links to Home) -->
+        <a href="index.html">
+            <img src="https://placehold.co/100x40/FF0000/FFFFFF?text=Netflix" alt="Netflix Logo" class="h-10">
+        </a>
+        <!-- Navigation Links -->
+        <a href="home.html" class="text-white hover:text-gray-300">Home</a>
+        <a href="series.html" class="text-white hover:text-gray-300">Series</a>
+        <a href="movies.html" class="text-white hover:text-gray-300">Movies</a>
+        <a href="originals.html" class="text-white hover:text-gray-300">Originals</a>
+        <a href="recently-added.html" class="text-white hover:text-gray-300">Recently Added</a>
+        <a href="my-list.html" class="text-white hover:text-gray-300">My List</a>
+    </div>
+    <div class="flex items-center space-x-4">
+        <!-- Additional Links -->
+        <a href="kids.html" class="text-white hover:text-gray-300">KIDS</a>
+        <a href="dvd.html" class="text-white hover:text-gray-300">DVD</a>
+        <!-- Notification Bell -->
+        <i class="fas fa-bell text-white cursor-pointer hover:text-gray-300"></i>
+        <!-- User Profile Dropdown -->
+        <div class="relative group">
+            <i class="fas fa-user text-white cursor-pointer"></i>
+            <div class="absolute right-0 mt-2 w-48 bg-black text-white rounded-md shadow-lg hidden group-hover:block">
+                <a href="kids.html" class="block px-4 py-2 hover:bg-gray-800">Kids</a>
+                <a href="manage-profiles.html" class="block px-4 py-2 hover:bg-gray-800">Manage Profiles</a>
+                <a href="account.html" class="block px-4 py-2 hover:bg-gray-800">Account</a>
+                <a href="help-center.html" class="block px-4 py-2 hover:bg-gray-800">Help Center</a>
+                <a href="sign-out.html" class="block px-4 py-2 hover:bg-gray-800">Sign out of Netflix</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="container mx-auto p-4">
+
+        <!-- Header Section -->
+        <div class="relative">
+             <video id="autoplay-video" class="w-full h-full object-cover" autoplay muted>
+                <source src="Money_Heist.mkv" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center p-6">
+                <div class="text-left">
+                    <p class="text-red-600 text-sm">N SERIES</p>
+                    <h1 class="text-5xl font-bold">
+                        MONEY <span class="text-red-600">HEIST</span>
+                    </h1>
+                    <p class="text-xl">PART 4</p>
+                    <div class="flex items-center mt-2">
+                        <span class="bg-yellow-400 text-black px-2 py-1 rounded text-sm font-bold">IMDB</span>
+                        <span class="ml-2 text-lg">8.8/10</span>
+                    </div>
+                    <p class="mt-1 text-lg">2B+ Streams</p>
+                    <div class="mt-4 flex space-x-4">
+                        <!-- In the main page (index.html) -->
+<button 
+    class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition duration-300"
+    onclick="window.location.href='money-heist.html'">
+    Play
+</button>
+                        <button class="bg-gray-300 text-black px-6 py-3 rounded-full hover:bg-gray-400 transition duration-300">
+                            Watch Trailer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+  <div class="p-4">
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Trending Now
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <div class="relative">
+    <a href="stranger-things.html">
+        <img alt="Show 1" class="w-full" height="100" src="stranger-things.jpg" width="200"/>
+        <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+            NEW EPISODES
+        </span>
+    </a>
+</div>
+     <div class="relative">
+      <img alt="Show 2" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/yuN3S42AjYMLgcS5gikt33-DDW4mIu2YTEFE0RXZwOA.jpg" width="200"/>
+      <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+       NEW EPISODES
+      </span>
+     </div>
+     <div class="relative">
+      <img alt="Show 3" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/zguDmR9yYjEZFA_zJyCfxfV64qweJx-sGuQCc_5Tkzc.jpg" width="200"/>
+      <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+       NEW EPISODES
+      </span>
+     </div>
+     <div class="relative">
+      <img alt="Show 4" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/OStc0kavLNZ48erec1_FQvApAgCDPpKXZhsHIUd8skA.jpg" width="200"/>
+      <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+       NEW EPISODES
+      </span>
+     </div>
+     <div class="relative">
+      <img alt="Show 5" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/H6nqsf8r_nCwziwTsNKNoqhGtIYa-ur82liXyHPOoWQ.jpg" width="200"/>
+      <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+       NEW EPISODES
+      </span>
+     </div>
+     <div class="relative">
+      <img alt="Show 6" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/xVk15PhPDi4Ui2DAR1Mam6n2LmtnPDeCJokMrmZQ05Q.jpg" width="200"/>
+      <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+       NEW EPISODES
+      </span>
+     </div>
+    </div>
+   </section>
+<!-- New This Week Section -->
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold">New this week</h2>
+            <div class="flex space-x-4 mt-4 overflow-x-auto scrollbar-hide">
+                <img src="https://storage.googleapis.com/a1aa/image/2okkirIvp_K4z3iX7F-NeGQF09ni5Fh2ia4_Fr4iSLU.jpg" alt="The Mother" class="w-36 h-auto" loading="lazy"/>
+                <img src="https://storage.googleapis.com/a1aa/image/ZicdUqZqJo3UlCBIavDI4nEiXYY3JyqSTZcgId9dCN8.jpg" alt="Blockbuster" class="w-36 h-auto" loading="lazy"/>
+                <img src="https://storage.googleapis.com/a1aa/image/WSy0Jw5x1UqHcn-wFUJdaJP1Ban_ETBZd2PKW7Uy1lA.jpg" alt="RDC" class="w-36 h-auto" loading="lazy"/>
+                <img src="https://storage.googleapis.com/a1aa/image/PYMax39uAuEG94kc6pkLMkSbrFc-ODik1LfTs299sI4.jpg" alt="Perfection" class="w-36 h-auto" loading="lazy"/>
+            </div>
+        </div>
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Watch It Again
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+     <div class="relative">
+      <img alt="Show 7" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/sdBwO6Amv7HpDFmCoNP86THcIGpi88alabUL4ggbjng.jpg" width="200"/>
+      <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+       NEW EPISODES
+      </span>
+     </div>
+     <div class="relative">
+      <img alt="Show 8" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/zgBaKOFomTs9Z7TRSiqAp1Blb4lLGVTpWL1968XE3XY.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 9" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/dFdvOSHKQfDUe4VAUFkl-Q24gYVDUE3NvarMBmv019Y.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 10" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/ZyjkK0183AxxgatxKFvzyV4-Iv1Qtu-kyf6lk2DL5kw.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 11" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/gRKqfsr1U5wBittDcutS-HGUgYfWvh6tbnGayXIPMmI.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 12" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/aXUKNFrbalkdeF86EMvXlf8rNsAvqnWbCqQ4Mvflfr8.jpg" width="200"/>
+     </div>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Popular on Netflix
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+     <div class="relative">
+      <img alt="Show 13" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/HoHGkHjY2zcReq5Pke8Izh9fhzhTlcL9EA9zdcpIyVQ.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 14" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/hsT_Y19HPqTwMbE0Ym797JLycuitPw1RjkQ979NTH-Q.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 15" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/Hj0X44THIXgVxMT17SiJ7M1XLEO4wdJub_8Xbsl0vUo.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 16" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/NKQfpFmTD1h5Tdz3ZmJZQ77IVNiE-GKb0VSqXQIkLbc.jpg" width="200"/>
+      <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+       NEW EPISODES
+      </span>
+     </div>
+     <div class="relative">
+      <img alt="Show 17" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/ZVgzCb7ZthB0GAtH8Y1wGJTOBHz7L8hgNOhpuplfqSA.jpg" width="200"/>
+      <span class="absolute bottom-2 left-2 bg-red-600 text-white px-2 py-1 text-xs">
+       NEW EPISODES
+      </span>
+     </div>
+     <div class="relative">
+      <img alt="Show 18" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/K4GHIGRmPuNIaBbmwlVQ005okoh1iCnvsRwdfK6pOE8.jpg" width="200"/>
+     </div>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Continue Watching for Robert
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+     <div class="relative">
+      <img alt="Show 19" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/CZMbGVnGbRr6kEAmyCrrb2zLqIN1T0v0XkIgRQe_9bo.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 20" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/98WVQWAM0_1h58z5dPfdBT3dTe5bKtOaBKHvmNX4-50.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 21" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/7G6UExHjQFlV2UuAAOfkwFnp8OmYplalXlfD1BIMO-4.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 22" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/WB8UqHCp0Msh5pzB8NmdrZUTKWUo_R6Ztybdjd4t4ew.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 23" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/CeANgTvnkiGga4sQUXe5OvgtCobEEuTIEyYhL5tMS9U.jpg" width="200"/>
+     </div>
+     <div class="relative">
+      <img alt="Show 24" class="w-full" height="100" src="https://storage.googleapis.com/a1aa/image/8dr2TbS754xPR81zD0mriVnnXX4zlomEVrPPLoHIvjU.jpg" width="200"/>
+     </div>
+    </div>
+   </section>
+  </div>
+</body>
+</html>
