@@ -4,13 +4,15 @@ function toggleAnswer(element) {
         }
 
         function getStarted() {
-            const email = document.getElementById("email").value || document.getElementById("footer-email").value;
-            if (email) {
-                alert(`Thank you for signing up, ${email}!`);
-            } else {
-                alert("Please enter a valid email.");
-            }
-        }
+    const email = document.getElementById("email").value || document.getElementById("footer-email").value;
+    if (email) {
+        alert(`Thank you for signing up, ${email}! Redirecting to login page...`);
+        
+        window.location.href = "login.html";
+    } else {
+        alert("Please enter a valid email.");
+    }
+}
 
         function signIn() {
             alert("Redirecting to sign-in page.");
